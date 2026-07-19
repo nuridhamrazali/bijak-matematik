@@ -41,7 +41,7 @@ export default function YearSelect() {
       <div className="max-w-5xl mx-auto w-full relative z-10">
         {/* Header */}
         <header className="pt-4 md:pt-6 pb-6 md:pb-10 text-center">
-          <div className="flex flex-row justify-between items-center mb-6 md:mb-10 bg-white px-4 md:px-8 py-3 md:py-4 rounded-3xl border-b-4 border-blue-200 shadow-sm gap-2">
+          <div className="flex flex-wrap justify-between items-center mb-6 md:mb-10 bg-white px-4 md:px-8 py-3 md:py-4 rounded-3xl border-b-4 border-blue-200 shadow-sm gap-4">
             <div className="flex items-center gap-2 md:gap-4 min-w-0">
               <div className="relative shrink-0">
                 <div className="w-12 h-12 md:w-16 md:h-16 bg-orange-100 rounded-full border-4 border-white flex items-center justify-center text-2xl md:text-3xl shadow-sm">🧒</div>
