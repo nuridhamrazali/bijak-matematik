@@ -3,7 +3,7 @@
  * SPDX-License-Identifier: Apache-2.0
  */
 
-import { BrowserRouter, Routes, Route } from 'react-router-dom';
+import { HashRouter as Router, Routes, Route } from 'react-router-dom';
 import Landing from './pages/Landing';
 import ParentLogin from './pages/parent/ParentLogin';
 import Dashboard from './pages/parent/Dashboard';
@@ -15,7 +15,7 @@ import QuizSummary from './pages/child/QuizSummary';
 
 export default function App() {
   return (
-    <BrowserRouter>
+    <Router>
       <Routes>
         <Route path="/" element={<Landing />} />
         <Route path="/parent-login" element={<ParentLogin />} />
@@ -26,6 +26,6 @@ export default function App() {
         <Route path="/quiz/:year/:topic" element={<Quiz />} />
         <Route path="/quiz-summary" element={<QuizSummary />} />
       </Routes>
-    </BrowserRouter>
+    </Router>
   );
 }
